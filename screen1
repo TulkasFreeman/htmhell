@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+
+<button type = "triangle"> Triangle
+</button>
+
+<button type = "circle"> Circle
+</button>
+
+<button type = "square"> Square
+</button>
+
+<form onsubmit="doStuff()" >
+  <br>
+  <input type="text" name="passCode" id = "word">
+
+</form>
+<p id = "buttonMessage"> sd</p>
+<script>
+var runner = 0;
+var message = document.getElementById("buttonMessage").value;
+function doStuff() {
+  runner++;
+  if(runner == 5){
+    var passCode = document.getElementById("word").value;
+    window.alert(passCode);
+  }
+  else{
+    document.getElementById("buttonMessage").innerHTML = "why";
+  }
+  //window.alert(passCode);
+}
+</script>
+</body>
+</html>
+
